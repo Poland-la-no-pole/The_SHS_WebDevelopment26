@@ -43,6 +43,7 @@ form input {
 
 
 
+
     .services-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +77,6 @@ form input {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .front {
@@ -156,9 +156,7 @@ form input {
 
 
 .contact-hero {
-  background-image:
-    url("../images/grass.jpg");
-
+  background-image:url("../images/grass.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;

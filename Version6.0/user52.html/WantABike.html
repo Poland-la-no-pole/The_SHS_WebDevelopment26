@@ -21,16 +21,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-    <style type="text/css">
-        footer {
-            font-size: 12px;
-            text-align: center;
-        }
-        
-        #knowledge > * {
-        border: 3px rgb(6, 10, 203) solid;
-        }
-    </style>
 </head>
 
 <body class="dark">
@@ -57,7 +47,7 @@
                      <li class="nav-item">
                          <a href="WantABike.html" class="nav-link">Want bikes</a>
                      </li>
-                    <li class="nav-item">
+                        <li class="nav-item">
                         <a href="Contact.html" class="nav-link" >Contact</a>
                     </li>
 
@@ -66,37 +56,76 @@
         </div>
     </nav>
     <!---------------------------------- End of nav-bar ------------------------------------->
-
-    <main class="container-fluid mt-3">
-
-        <h1 class="text-left my-3 title" tabindex="0">About mountain biking</h1>
-        <!-- Edit this line for the title of your page -->
-
-        <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Put your content below this line ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
-        <h3 id="topHeading">I like to mountain bike</h3>
-        <div id="knowledge">
-            <li>What do I like about it?
-                <ul>
-                    <li>It's a good way to hang out with friends</li>
-                    <li>You can do as much or a little as you want</li>
-                    <li>It's a wide range of skill for beginers to really advanced</li>
-                </ul>
-            </li>
-            <li>How to mountian bike
-                <ul>
-                    <li>Take it slow at first, get to know the trail before sending it</li>
-                    <li>When turning go out wide and then turn to keep as much speed as possible</li>
-                    <li>Once you have done the trial a couple of times then you can send it and have a ton of fun </li>
-                </ul>
-            </li>
-        </div>
         <div>
+            </table>
+            <table>
+                <tr>
+                    <td> 
+                            <button class="BikeButton" onclick="increaseCount()">Click if you want a mountian bike</button>
+                            <button class="BikesGone" onclick="decreaseCount()">Remove bike</button>
+                            <button class="BikesNone" onclick="resetCount()">No more bikes</button>
+                    </td>
+                </tr>
             </table>
         </div>
         <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Make sure all your content is above this line ↑↑↑↑↑↑↑↑↑-->
     </main>
+    <!---------------------------------- Begin of bike button------------->
+    <p id="count" style="font-size:40px;">0</p> 
 
+    <script>
+    // Declare the counter
+    let count = 0;
 
+    // isplay
+    function updateCount() {
+    document.getElementById("count").innerHTML = count;
+    }
+
+    // increase
+    function increaseCount() {
+    count++; 
+    updateCount();
+    }
+
+    // decrease
+    function decreaseCount() {
+    count--; 
+    updateCount();
+    }
+
+    // reset
+    function resetCount() {
+    count = 0; 
+    updateCount();
+    }
+    </script>
+    <!---------------------------- End of bike button ------------->
+    <h2 style="color: white;"> 
+        Why to get a bike
+    </h2>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="demo-contents">They are fun to ride</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="demo-contents bg-alt">They can be riden in lots of places</div>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="demo-contents">Most times they can be repaired easily</div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="demo-contents bg-alt">They are the most efficent(energy wise) thing to use.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="demo-contents bg-alt">There are a wide variety of bikes you can ride for all diffrent people</div>
+                    </div>
+                </div>
 
     <!---------------------------------- Begin the footer ------------->
     <footer>
@@ -121,7 +150,7 @@
                                     <a href="https://www.tiktok.com/en/" class="list-group-item list-group-item-action"> Ticktock </a>
                                     <i class="fa fa-brands fa-tiktok"></i>
                                 </div>
-                                <div class="col demo-content">
+                                <div class="col demo-content" >
                                     <a href="https://www.facebook.com/" class="list-group-item list-group-item-action"> Facebook </a>
                                     <i class="fa fa-brands fa-facebook"></i>
                                 </div>

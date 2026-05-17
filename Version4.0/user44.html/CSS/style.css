@@ -1,4 +1,3 @@
-@import url(rainbow.css);
 .button {
 	background-color: #4CAF50;
 	border: none;
@@ -172,22 +171,7 @@ Blur Radius:
   color: #333; /* Dark gray is softer than pure black */
   background-color: #a4a493; /* Light, clean background */ 
 }
-#rainbow td:hover {
-    background-color: black;
-}
 
-.button:active {
-    transform: scale(0.95);
-    background-color: darkgreen;
-}
 
-.nav-link:focus {
-    outline: 3px solid #007bff;
-    background-color: rgba(0, 123, 255, 0.1);
-}
 
-a:visited {
-    color: purple;
-}
 
-()

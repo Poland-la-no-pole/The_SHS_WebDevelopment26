@@ -93,3 +93,38 @@ document.addEventListener('keydown', (e) => {
 });
 
 initBoard(); 
+function changeText() {
+ document.getElementById("textChange").innerHTML="Thanks for liking pizza! You are my friend now! :)";
+}
+var space = " ";
+var pos = 0;
+var msg = "User 46";
+
+function Scroll(){
+document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
+
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", 0);
+}
+Scroll();
+
+function showAlert() {
+    alert("Hello");
+}
+
+function changeColor() {
+    document.body.style.backgroundColor = "lightcoral";
+}
+
+function resetColor() {
+    document.body.style.backgroundColor = "white";
+}
+
+function hideText() {
+    document.getElementById("hideMe").style.display = "none";
+}
+
+function showText() {
+    document.getElementById("hideMe").style.display = "block";
+}

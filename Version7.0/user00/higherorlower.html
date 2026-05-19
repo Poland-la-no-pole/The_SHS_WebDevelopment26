@@ -4,6 +4,17 @@
         <title>Higher or Lower</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .higher {
+                color: red;
+            }
+            .lower {
+                color: blue;
+            }
+            .success {
+                color: green;
+            }
+        </style>
         <script>
             function isNegative(){
                 //Your code for exercise one here
@@ -54,7 +65,7 @@
             }
         </script>
         <script>
-            const answer = Math.floor(Math.random() * 2000) + 1;
+            let answer = Math.floor(Math.random() * 2000) + 1;
             function resetAnswer(){
                 answer = Math.floor(Math.random() * 2000) + 1;
             }
@@ -63,12 +74,19 @@
             
             function checkGuess(){
                 let num = Number(document.getElementById("num").value);
+                
                 if (num > answer){
-                    alert( "Your guess is too high.");
+                    document.getElementById("result").innerHTML = "Your guess is too high.";
+                    document.getElementById("prevGuess").classList.add("higher");
+                    document.getElementById("prevGuess").innerHTML += "<br>" + num;
                 } else if (num < answer){
-                    alert("Your guess is too low.");
+                    document.getElementById("result").innerHTML = "Your guess is too low.";
+                    document.getElementById("prevGuess").classList.add("lower");
+                    document.getElementById("prevGuess").innerHTML += "<br>" + num;
                 } else {
-                    alert("Congratulations! You guessed the number!");
+                    document.getElementById("result").innerHTML = "Congratulations! You guessed the number!";
+                    document.getElementById("prevGuess").classList.add("success");
+                    document.getElementById("prevGuess").innerHTML += "<br>" + num;
                 }
             }
         </script>
@@ -88,7 +106,8 @@
             Guess a number between 1 and 2000:
 
             <input id="num" type="text"/><button onclick="checkGuess()">Submit</button><button onclick="resetAnswer()">Reset</button>
-            <div id="outError2">Output</div>
+            <div id="result">Output</div>
+            <div><ul id="prevGuess"><li id="guesses">Previous Guesses</li></ul></div>
 
         </main>
     </body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+
+function addNums() {
+const a = Number(document.getElementById("addNum1").value);
+let b = document.getElementById("addNum2").value;
+b=Number(b);
+document.write(a+b);
+}
+
+function multiply() {
+const a = Number(document.getElementById("multiply1").value);
+let b = document.getElementById("multiply2").value;
+b=Number(b);
+document.write(a*b);
+}
+
+function podz() {
+const a = Number(document.getElementById("podz1").value);
+let b = document.getElementById("podz2").value;
+b=Number(b);
+document.write(a*a+b*b);
+}
+
+</script>
+<input id="addNum1" type="text" />
+<input id="addNum2" type="text" />
+<input id="sumButton" onclick="addNums()" type="button" value="Add"/>
+
+<input id="multiply1" type="text" />
+<input id="multiply2" type="text" />
+<input id="sumButton" onclick="multiply()" type="button" value="Multiply"/>
+
+<h1>Pythagorean Theorem</h1>
+<input id="podz1" type="text" />
+<input id="podz2" type="text" />
+<input id="sumButton" onclick="podz()" type="button" value="Find C"/>
+
+</body>
+</html>
+
+
+
+
+</body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function addNums() {
+            let a = Number(document.getElementById("addNum1").value);
+            let b = Number(document.getElementById("addNum2").value);
+            alert("The sum is: " + (a + b));
+        }
+
+        function multNums() {
+            let a = Number(document.getElementById("multNum1").value);
+            let b = Number(document.getElementById("multNum2").value);
+            alert("The product is: " + (a * b));
+        }
+
+        function findC() {
+            let a = Number(document.getElementById("sideA").value);
+            let b = Number(document.getElementById("sideB").value);
+            let c = Math.sqrt((a * a) + (b * b));
+            alert("Side C is: " + c.toFixed(2));
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <input id="addNum1" type="text"> + 
+        <input id="addNum2" type="text">
+        <input type="button" value="add" onclick="addNums()">
+        <br><br>
+
+        <input id="multNum1" type="text"> * <input id="multNum2" type="text">
+        <input type="button" value="multiply" onclick="multNums()">
+        <br><br>
+
+        <h3>Pythagorean Theorem</h3>
+        a = <input id="sideA" type="text"><br>
+        b = <input id="sideB" type="text"><br>
+        <input type="button" value="Find C" onclick="findC()">
+    </main>
+</body>
+</html>

@@ -4,9 +4,7 @@
         <title>Higher or Lower</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>let answer = randomInt(1, 200);
-        </script>
-        <!--script>
+        <script>
             function isNegative(){
                 //Your code for exercise one here
                 if (Number(document.getElementById("numb").value) < 0){
@@ -54,7 +52,13 @@
                         document.getElementById("outError").innerHTML = "The number is equal to 10.";
                     }
             }
-        </script-->
+        </script>
+        <script>
+            const answer = Math.floor(Math.random() * 2000) + 1;
+            function resetAnswer(){
+                answer = Math.floor(Math.random() * 2000) + 1;
+            }
+        </script>
         <script>
             
             function checkGuess(){
@@ -81,9 +85,9 @@
             <input id="exerciseFour" onclick="higherOrLower()" type="button" value="Exercise Four" />
         
             <h2>Higher or Lower</h2>
-            Guess a number between 1 and 200:
+            Guess a number between 1 and 2000:
 
-            <input id="num" type="text"/><button onclick="checkGuess()">Submit</button>
+            <input id="num" type="text"/><button onclick="checkGuess()">Submit</button><button onclick="resetAnswer()">Reset</button>
             <div id="outError2">Output</div>
 
         </main>

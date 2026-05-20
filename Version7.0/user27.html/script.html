@@ -6,24 +6,6 @@
 -->
 
 <head>
-    <head>
-    <title>Form Page</title>
-    <title>Spreadsheet Table</title>
-</head>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-</head>
-<head>
-    <title>Mad Lib</title>
-</head>
-<head>
-    <title>Mad Lib Form</title>
-</head>
-
     <title>JavaScript</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +28,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="JS/script.js"></script>
-    
+    <script>
+        var answer = Math.floor(Math.random() * 100) + 1;
+        function checkGuess() {
+    alert(answer);
+}
+function checkGuess() {
+    var guess = document.getElementById("num").value;
+
+    if (guess < answer) {
+        alert("higher");
+    } else if (guess > answer) {
+        alert("lower");
+    } else {
+        alert("Success");
+    }
+}
+    </script>
+
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
     <!-- Custom styles for this template -->
@@ -54,84 +53,17 @@
 
     </style>
     <script>
+        const randNum = Math.floor(Mathrandom()*10)+1;
 
-    function addNumbers() {
-
-        let num1 = Number(document.getElementById("addOne").value);
-        let num2 = Number(document.getElementById("addTwo").value);
-
-        let answer = num1 + num2;
-
-        document.getElementById("output").innerHTML = answer;
-    }
-
-    function multiplyNumbers() {
-
-        let num1 = Number(document.getElementById("multiplyOne").value);
-        let num2 = Number(document.getElementById("multiplyTwo").value);
-
-        let answer = num1 * num2;
-
-        document.getElementById("output").innerHTML = answer;
-    }
-
-    function findC() {
-
-        let a = Number(document.getElementById("sideA").value);
-        let b = Number(document.getElementById("sideB").value);
-
-        let c = Math.sqrt((a * a) + (b * b));
-
-        document.getElementById("output").innerHTML = c;
-    }
-
-</script>
-<style>
-
-        table, th, td {
-            border: 1px solid gray;
-            border-collapse: collapse;
-            padding: 10px;
+        function testRandom(){
+            alert(randNum);
         }
 
-        th {
-            font-weight: bold;
-        }
-
-    </style>
-    <script>
-        const scriptURL = '<your script url>';
-        const form = document.forms['submit-to-google-sheet'];
-        
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert('Success!', response))
-            .catch(error => alert('Error!', error.message));
-        });
-      </script>
-      <script>
-
-    function createStory() {
-
-        let noun = document.getElementById("noun").value;
-        let adjective = document.getElementById("adjective").value;
-        let verb = document.getElementById("verb").value;
-
-        let madlib = "Last weekend I saw a " + adjective + " " + noun + " that loved to " + verb + " at the park.";
-
-        document.getElementById("story").innerHTML = madlib;
-    }
-
-</script>
-
-
+    </script>
+    
 </head>
 
 <body>
-  
-
     <!---------------------------------- Begin the nav-bar ------------->
     <div class="menu">
         <nav class="navbar navbar-expand-md p-2 navbar-dark bg-dark">
@@ -183,106 +115,11 @@
         </p>
     </footer>
     <!---------------------------------- End the footer ------------->
-    <body>
-
-    <!-- Addition -->
-    <input id="addOne" type="text">
-    +
-    <input id="addTwo" type="text">
-
-    <button onclick="addNumbers()">add</button>
-
-    <br><br><br>
-
-    <!-- Multiplication -->
-    <input id="multiplyOne" type="text">
-    *
-    <input id="multiplyTwo" type="text">
-
-    <button onclick="multiplyNumbers()">multiply</button>
-
-    <br><br><br>
-
-    <!-- Pythagorean Theorem -->
-    <h1>Pythagorean Theorem</h1>
-
-    a=
-    <input id="sideA" type="text">
-
-    <br><br>
-
-    b=
-    <input id="sideB" type="text">
-
-    <br><br>
-
-    <button onclick="findC()">Find C</button>
-
-    <h2 id="output"></h2>
-
-<body>
-
-    <input type="text" placeholder="Email">
-
-    <input type="text" placeholder="Name">
-
-    <input type="text" placeholder="Favorite Color">
-
-    <input type="text" placeholder="Comments">
-
-    <button>Send</button>
-
-</body> 
-<body>
-    <form name="submit-to-google-sheet">
-        <input name="email" type="email" placeholder="Email" required>
-        <button type="submit">Send</button>
-     </form>
 </body>
 <body>
-
-<h1>Mad Lib Generator</h1>
-
-Noun:
-<input id="noun" type="text">
-
-<br><br>
-
-Adjective:
-<input id="adjective" type="text">
-
-<br><br>
-
-Verb:
-<input id="verb" type="text">
-
-<br><br>
-
-<button onclick="createStory()">Submit</button>
-
-<p id="story"></p>
-</body>
-<body>
-
-<h1>Mad Lib</h1>
-
-Noun:
-<input id="noun" type="text">
-
-<br><br>
-
-Adjective:
-<input id="adjective" type="text">
-
-<br><br>
-
-Verb:
-<input id="verb" type="text">
-
-<br><br>
-
-<button>Submit</button>
-
+   <main>
+     <input onclick="testRandom()" type="button" value="submit" />
+   </main>
 </body>
 
 </html>

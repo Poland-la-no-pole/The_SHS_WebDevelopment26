@@ -3,9 +3,12 @@
 const key = "a5f154d4e6c204773ccd69a1c5a9026c";
 
 // Since the GeoLocation is not avaliable we can hard code the coordinates
-// Shakopee 44.7974' -93.5273'
+// Shakopee 44.7974' -93.5273' //kenya -1.2881' 36.8219'
 var latitude = "44.79243244029924";
 var longitude = "-93.50191097617328";
+
+var latitude = "-1.2881011651425602";
+var longitude ="36.82197434463309";
 
 // SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");

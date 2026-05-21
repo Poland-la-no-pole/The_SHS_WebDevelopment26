@@ -27,8 +27,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="JS/script.js"></script>
-   <script src="JS/SampleJS.js"></script>
+    <script src="SampleJS.js"></script>
 
     <!--↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ Put your .js files here ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
 
@@ -69,24 +68,32 @@
     <!---------------------------------- End the nav-bar ------------->
 <center><p id="textChange"> My name is User ##</p></center>
 <center><button type="button" onclick="changeText()">Click if you like</button></center>
-<body onload="myFunction()">
-    <img src ="https://scontent.frst1-1.fna.fbcdn.net/v/t39.30808-6/700581505_1498059725444038_8146785962949211280_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=UNaR_0k5ieUQ7kNvwFbLt0Q&_nc_oc=Adpxx6LwmMjX7o_ZEXfyOMz3x8L67jz74OM05zsu9RxVaEcwrxyo-yKpDNjr6ONdGRk&_nc_zt=23&_nc_ht=scontent.frst1-1.fna&_nc_gid=jBd5ku27nRSLXx0z5NJldg&_nc_ss=7b2a8&oh=00_Af6UXIPvMZ9xIFe9-zUMja07Q6CeZ3D3PzLVl6i8dldkbQ&oe=6A0D15BD" width ="145" height ="126" alt="Planets" usemap="#planetmap" />
+<button onclick="alert1()">Yolk</button>
 
-<map name="planetmap">
+<body onload="load()">
+  <img src ="https://preview.redd.it/what-do-you-think-jett-looks-like-under-his-suit-v0-x1bycche7fde1.jpeg?auto=webp&s=787dcf8c88a428d172ec121d243699b56537fc72" onload="loadImage()" width ="145" height ="126" alt="Jett" usemap="#jettmap" />
+
+<map name="jettmap">
 <area shape ="rect" coords ="0,0,82,126"
-onmouseover="writeText('The Sun and the gas giant planets like Jupiter are by far the largest objects in our Solar System.')"
-href ="sun.htm" target ="_blank" alt="Sun" />
+onmouseover="writeText('Jett')"
+href ="sun.htm" target ="_blank" alt="Jett" />
 
 <area shape ="circle" coords ="90,58,3"
-onmouseover="writeText('The planet Mercury is very difficult to study from the Earth because it is always so close to the Sun.')"
-href ="mercur.htm" target ="_blank" alt="Mercury" />
+onmouseover="writeText('Jett')"
+href ="mercur.htm" target ="_blank" alt="Jett" />
 
 <area shape ="circle" coords ="124,58,8"
-onmouseover="writeText('Until the 1960s, Venus was often considered a twin sister to the Earth because Venus is the nearest planet to us, and because the two planets seem to share many characteristics.')"
-href ="venus.htm" target ="_blank" alt="Venus" />
+onmouseover="writeText('Jett')"
+href ="venus.htm" target ="_blank" alt="Jett" />
 </map> 
 
-<p id="desc">Mouse over the sun and the planets and see the different descriptions.</p>
+<input type="text" onkeypress="alertInput()">
+
+<input type="text" value="Select text" onselect="myFunction()">
+<p id="demo"></p>
+<input type="text" id="fname" onblur="caseUpper()">
+
+<input type="text" onfocus="anon(this)">
 
 </body>
     <main class="m-3" id="content">

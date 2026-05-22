@@ -6,7 +6,7 @@
                 const a = Number(document.getElementById('addNum1').value);
                 let b = document.getElementById('addNum2').value;
                 b = Number(b);
-                document.write(Number(a+b));
+                document.getElementById('output').innerHTML = "Output: " + (a+b);
             }
 
             function mulNums() {
@@ -47,6 +47,8 @@
         <input id="side1" type="text" />
         <input id="side2" type="text" />
         <input id="formulaButton" onclick="pythagorean()" type="button" value="find C"/>
+
+        <div id="output">Output:  </div>
 
 
     </body>

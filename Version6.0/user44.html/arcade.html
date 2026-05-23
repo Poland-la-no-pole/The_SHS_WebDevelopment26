@@ -33,29 +33,38 @@
         </nav>
     </header>
 
-    <main class="container my-5 shadow-sm rounded p-4">
-        <section class="text-center my-4">
-            <h1 class="display-4 fw-extrabold text-uppercase">Level Up Your Play</h1>
-            <p class="lead text-muted">Welcome to PixelForge. Explore new indie web games, challenge high scores, and connect with other players.</p>
-        </section>
-
-        <div id="featuredGamesCarousel" class="carousel slide shadow rounded mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner text-center bg-dark text-white py-5 rounded">
-                <div class="carousel-item active">
-                    <h2 class="text-warning"><i class="fa-solid fa-rocket me-2"></i>Retro Spacer</h2>
-                    <p>Classic arcade shooting action directly in your browser tab.</p>
-                </div>
-                <div class="carousel-item">
-                    <h2 class="text-info"><i class="fa-solid fa-cube me-2"></i>Grid Shift</h2>
-                    <p>A fast-paced geometric puzzle game designed to test your reflexes.</p>
+   <main class="container my-5 shadow-sm rounded p-4">
+        <h2 class="mb-4 text-center"><i class="fa-solid fa-gamepad me-2"></i>Select a Game to Launch</h2>
+        
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 border-secondary shadow-sm">
+                    <div class="card-body text-center">
+                        <h4 class="card-title text-primary">Retro Spacer</h4>
+                        <div class="game-preview-box p-4 rounded my-3">
+                            [=== SPACESAFE MINI-GAME INITIALIZED ===]
+                            <br><br>
+                            Press Space to Start Play
+                        </div>
+                        <p class="card-text text-muted">Dodge incoming asteroids and fire lasers to clear your path through space.</p>
+                        <button class="btn btn-outline-primary w-100">Click to Play Now</button>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#featuredGamesCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#featuredGamesCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 border-secondary shadow-sm">
+                    <div class="card-body text-center">
+                        <h4 class="card-title text-success">Grid Shift</h4>
+                        <div class="game-preview-box p-4 rounded my-3">
+                            [=== PUZZLE MATRIX RUNNING ===]
+                            <br><br>
+                            Click to Align Tiles
+                        </div>
+                        <p class="card-text text-muted">Match glowing shapes in sequence before your timer runs completely dry.</p>
+                        <button class="btn btn-outline-success w-100">Click to Play Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 

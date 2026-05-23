@@ -22,41 +22,40 @@
                 </button>
                 <div class="collapse navbar-collapse" id="gamingNav">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                         <a class="nav-link" href="about.html">About</a>
                         <a class="nav-link" href="arcade.html">Arcade</a>
                         <a class="nav-link" href="leaderboard.html">Leaderboard</a>
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link active" href="contact.html">Contact</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="container my-5 shadow-sm rounded p-4">
-        <section class="text-center my-4">
-            <h1 class="display-4 fw-extrabold text-uppercase">Level Up Your Play</h1>
-            <p class="lead text-muted">Welcome to PixelForge. Explore new indie web games, challenge high scores, and connect with other players.</p>
-        </section>
-
-        <div id="featuredGamesCarousel" class="carousel slide shadow rounded mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner text-center bg-dark text-white py-5 rounded">
-                <div class="carousel-item active">
-                    <h2 class="text-warning"><i class="fa-solid fa-rocket me-2"></i>Retro Spacer</h2>
-                    <p>Classic arcade shooting action directly in your browser tab.</p>
-                </div>
-                <div class="carousel-item">
-                    <h2 class="text-info"><i class="fa-solid fa-cube me-2"></i>Grid Shift</h2>
-                    <p>A fast-paced geometric puzzle game designed to test your reflexes.</p>
-                </div>
+   <main class="container my-5 shadow-sm rounded p-4">
+        <h2><i class="fa-solid fa-envelope me-2"></i>Join the PixelForge Clan</h2>
+        <p class="text-muted">Register an account to save your scores automatically and receive updates on beta tests.</p>
+        
+        <form>
+            <div class="mb-3">
+                <label for="gamerTag" class="form-label fw-bold">GamerTag</label>
+                <input type="text" class="form-control" id="gamerTag" placeholder="Enter your display name" required>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#featuredGamesCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#featuredGamesCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
+            <div class="mb-3">
+                <label for="gamerEmail" class="form-label fw-bold">Email Address</label>
+                <input type="email" class="form-control" id="gamerEmail" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="favGenre" class="form-label fw-bold">Preferred Game Type</label>
+                <select class="form-select" id="favGenre">
+                    <option selected>Arcade Shooter</option>
+                    <option>Grid Puzzle</option>
+                    <option>Platformer</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-dark px-4 py-2">Create Account</button>
+        </form>
     </main>
 
     <footer class="bg-dark text-white text-center py-4 mt-auto">

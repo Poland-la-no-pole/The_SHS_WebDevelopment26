@@ -1,0 +1,38 @@
+* {
+    text-align: center;
+    color: rgb(234, 233, 233);
+}
+
+body {
+    background-color: rgb(89, 49, 13);
+}
+
+#titleCard {
+    background-color: rgb(216, 211, 211);
+    white-space: nowrap;
+    width: 550px;
+    height: 200px;
+
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    padding-top: 50px;
+}
+
+#titleCard > * {
+    color: black;
+}
+
+#contentBlock {
+    background-color: rgb(115, 63, 17);
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    margin: 50px;
+    display: inline-block;
+}

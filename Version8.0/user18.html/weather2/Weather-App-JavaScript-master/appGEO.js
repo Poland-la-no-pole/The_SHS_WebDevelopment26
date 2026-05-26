@@ -73,7 +73,7 @@ function displayWeather(){
 
 // C to F conversion
 function celsiusToFahrenheit(temperature){
-    return (temperature * 9/5) + 32;
+    return (temperature + 273);
 }
 
 // WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENET
@@ -81,11 +81,11 @@ tempElement.addEventListener("click", function(){
     if(weather.temperature.value === undefined) return;
     
     if(weather.temperature.unit == "celsius"){
-        let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
-        fahrenheit = Math.floor(fahrenheit);
+        let KELVIN = celsiusToFahrenheit(weather.temperature.value);
+        KELVIN = Math.floor(KELVIN);
         
-        tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
-        weather.temperature.unit = "fahrenheit";
+        tempElement.innerHTML = `${KELVIN}°<span>K</span>`;
+        weather.temperature.unit = "KELVIN";
     }else{
         tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
         weather.temperature.unit = "celsius"

@@ -1,6 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
+    <body>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NHL - National Hockey League</title>
@@ -18,20 +20,14 @@
         h2 a:hover { text-decoration: underline; }
         footer { background: #000; color: #fff; text-align: center; padding: 1rem; margin-top: 3rem; }
     </style>
-</head>
-<body>
-    <header>
-        <h1>🏒 NHL - National Hockey League</h1>
-    </header>
-
-    <nav>
+ <nav>
         <script>
             document.querySelectorAll('h2 a').forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
                     const page = this.getAttribute('href').replace('.html', '');
                     const imageMap = {
-                        'home': 'https://via.placeholder.com/800x400?text=NHL+home',
+                        'home': 'https://via.placeholder.com/800x400?text=NHL+Home',
                         'teams': 'https://via.placeholder.com/800x400?text=NHL+Teams',
                         'standings': 'https://via.placeholder.com/800x400?text=Standings',
                         'schedule': 'https://via.placeholder.com/800x400?text=Schedule',
@@ -58,54 +54,13 @@
         <a href="stats.html">Stats</a>
         <a href="about.html">About</a>
     </nav>
-
-    <main>
-        <section id="home">
-            <h2><a href="welcome.html">Welcome to the NHL</a></h2>
-            <p>The National Hockey League is the premier professional ice hockey league in the world.</p>
-        </section>
-
-        <section id="teams">
-            <h2><a href="teams.html">Teams</a></h2>
-            <p>The NHL consists of 32 teams divided into two conferences.</p>
-        </section>
-
-        <section id="standings">
-            <h2><a href="standings.html" target="_blank" rel="noopener noreferrer">Standings</a></h2>
-
-            <p>Check current league standings and playoff positions.</p>
-        </section>
-
-        <section id="schedule">
-            <h2><a href="schedule.html" target="_blank" rel="noopener noreferrer">Schedule</a></h2>
-            <p>View upcoming games and results.</p>
-        </section>
-
-        <section id="players">
-            <h2><a href="Players.html"_blank" rel="noopener noreferrer"">Players</a></h2>
-            <p>Explore statistics for your favorite NHL players.</p>
-        </section>
-<div class="card-container">
-    <div class="card">
-        <div class="card-inner">
-            <div class="card-front">
-                <img src="images/download.jpg" alt="Arby's"> <div class="width"></div>
-                <h2>Statistics</h2>
-            </div>
-            <div class="card-back">
-                <h3><a href="stats.html" target="_blank" rel="noopener noreferrer">Statistics</a></h3>
-                <p>some statistics about the NHL are alex Ovechkin is the all-time leading scorer.</p>
-            </div>
-        </div>
-    </div>
-</div>
-        </section>
- <section id="about the nhl ">
-            <h2><a href="about.html"_blank" rel="noopener noreferrer"">About the NHL</a></h2>
-            <p>Learn more about the National Hockey League and its rich history.</p>
-        </section>
-
-        <style>
+    </head>
+<body>
+    <header>
+        <h1>🏒 NHL - National Hockey League</h1>
+    </header>
+    </body>
+    <style>
         background-color #f5f5f5
         
         .card-container {
@@ -157,7 +112,7 @@
         }
         .card-back {
             transform: rotateY(180deg);
-            background-color: #010101;
+            background-color: #000000;
             color: white;
         }
         .card-back h3 {
@@ -167,9 +122,45 @@
             text-align: center;
         }
     </style>
-    </main>
+<div class="card-container">
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="images/avs.jpg" alt="Stats">
+                <h2>Avs</h2>
+            
+            </div>
+            <div class="card-back">
+                <h3>Avs</h3>
+                <p> The avs are one of the best teams in the nhl right now.</p>
+            </div>
 
-    <footer style="background: #000; color: #fff; text-align: center; padding: 2rem; margin-top: 3rem;">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="images/Minnesota_Wild.svg" alt="Wild">
+                <h2>Wild</h2>
+                <h4></h4><sub></sub>
+            </div>
+            <div class="card-back">
+                <h3>Wild</h3>
+                <p>The Minnesota Wild just made the 2nd round of playoffs for the first time in 11 years.</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <style>
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        } 
+        </style>
+      <footer style="background: #000; color: #fff; text-align: center; padding: 2rem; margin-top: 3rem;">
     <div style="max-width: 1200px; margin: 0 auto;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-bottom: 2rem;">
             <div style="flex: 1; min-width: 200px; margin: 1rem;">
@@ -205,7 +196,7 @@
             </div>
         </div>
         <div style="border-top: 1px solid #333; padding-top: 1rem;">
+           
     </div>
 </footer>
-</body>
-</html>
+    </html>

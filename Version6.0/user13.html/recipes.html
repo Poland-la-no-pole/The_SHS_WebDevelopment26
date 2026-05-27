@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> OFM | Home </title>
+        <title> OFM | Recipes </title>
 
         <!--NECESSITIES-->
         <!--Bootstrap-->
@@ -42,26 +42,13 @@
                 text-decoration: underline;
             }
 
-            #contentBlock > * {
+            .card:hover h5 {
+                color: blue;
+            }
+
+            ul li {
                 text-align: left;
-                color: white;
-
-                margin-left: 15px;
-                margin-top: 10px;
             }
-
-            ol li::marker {
-                content: url(crate.png);
-            }
-
-            ol li {
-                text-align: left;
-                margin-bottom: 5px;
-            }
-
-
-
-
             
         </style>
     </head>
@@ -85,7 +72,7 @@
 
                 <div class="collapse navbar-collapse" id="NavMenu">
                     <ul class="navbar-nav me-auto bg-light">
-                        <li class="nav-item"><a href="home.html" class="nav-link disabled">Home</a></li>
+                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
                         <!--Dropdown-->
                         <li class="nav-item dropdown">
                             <a 
@@ -113,7 +100,7 @@
                             </ul>
 
                         </li>
-                        <li class="nav-item"><a href="recipes.html" class="nav-link">Recipes</a></li>
+                        <li class="nav-item"><a href="recipes.html" class="nav-link disabled">Recipes</a></li>
                     </ul>
                 </div>
             </div>    
@@ -125,54 +112,65 @@
                 <div id="titleCard">
                     <h1>Online Fish Market</h1>
                     <hr></hr>
-                    <h4>Home: Welcome!</h4>
+                    <h4>Recipes</h4>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div id="contentBlock">
-                        <h1>What is The Online Fish Market?</h1>
-                        <hr></hr>
-                        <p>We sell a variety of fish, ranging from even alive to deceased fish. That does sound bad, but we aim 
-                            to appeal to a wide range of consumers. So if you're looking to care for a pet fish, visit our pet shop
-                            for overwhelmingly cheap prices! If you're feeling hungry for some seafood, we have just the thing for you in our
-                            fillet shop! But maybe you're also looking for recipes that deal with fish? No worries because the Online Fish Market
-                            has got you covered with recipes!
-                        </p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h5>List of Fish We Carry As Pets</h5>
-                                <ol>
-                                    <li>Clownfish</li>
-                                    <li>Porcupine Fish</li>
-                                    <li>Goldfish</li>
-                                    <li>Koi Fish</li>
-                                    <li>Betta Fish</li>
-                                    <li>Guppies</li>
-                                    <li>Gobies</li>
-                                </ol>
-                            </div>
-                            <div class="col-md-6">
-                                <h5>List of Fillet Options</h5>
-                                <ol>
-                                    <li>Regular</li>
-                                    <li>Steak</li>
-                                    <li>Loin</li>
-                                </ol>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="https://www.seriouseats.com/thmb/cU8x361dQjH3w8d30Xm7D2rakP4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20211201-fish-piccata-vicky-wasik-17-205e3c62dd94410f9fae9418417b4459.jpg" alt="recipe image"/>
+                        <h5>Fish Piccata</h5>
+                        <ul class="card-desc">
+                            <li>All-purpose flour</li>
+                            <li>Fish fillet</li>
+                            <li>Vegetable oil</li>
+                            <li>Parsley leaves</li>
+                            <li>White wine</li>
+                        </ul>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h5>List of Recipes</h5>
-                                <ol>
-                                    <li>Fish Piccata</li>
-                                    <li>Lemon Feta Fish</li>
-                                    <li>Fish Florentine</li>
-                                    <li>Sushi Rolls</li>
-                                    <li>Nigiri Sushi</li>
-                                </ol>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="https://www.kitchensanctuary.com/wp-content/uploads/2025/06/Lemon-Feta-Fish-Square-FS.jpg" alt="recipe image"/>
+                        <h5>Lemon Feta Fish</h5>
+                        <ul class="card-desc">
+                            <li>Fish fillet</li>
+                            <li>Tomatoes</li>
+                            <li>Oven</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://images.getrecipekit.com/20220621133411-fish-20florentine-20img-202.jpg?aspect_ratio=1:1&quality=90&" alt="recipe image"/>
+                        <h5>Fish Florentine</h5>
+                        <ul class="card-desc">
+                            <li>Garlic</li>
+                            <li>Spinach</li>
+                            <li>White wine</li>
+                            <li>Sizzlefish</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://bellyfull.net/wp-content/uploads/2024/07/Fish-Stick-Sushi-Rolls-blog-2.jpg" alt="recipe image"/>
+                        <h5>Sushi Rolls</h5>
+                        <ul class="card-desc">
+                            <li>Sushi rice</li>
+                            <li>Avocadoes</li>
+                            <li>Cucumbers</li>
+                            <li>Nori sheets</li>
+                            <li>Fish sticks</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://i0.wp.com/www.craftycookbook.com/wp-content/uploads/2024/04/img_4608-2-1.jpg?resize=1600%2C2000&ssl=1" alt="recipe image"/>
+                        <h5>Nigiri Sushi</h5>
+                        <ul class="card-desc">
+                            <li>Smoked salmon</li>
+                            <li>Crab sticks</li>
+                            <li>Ginger</li>
+                            <li>Sushi rice</li>
+                        </ul>
                     </div>
                 </div>
             </div>

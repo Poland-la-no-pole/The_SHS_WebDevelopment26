@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> OFM | Home </title>
+        <title> OFM | Shop </title>
 
         <!--NECESSITIES-->
         <!--Bootstrap-->
@@ -42,25 +42,6 @@
                 text-decoration: underline;
             }
 
-            #contentBlock > * {
-                text-align: left;
-                color: white;
-
-                margin-left: 15px;
-                margin-top: 10px;
-            }
-
-            ol li::marker {
-                content: url(crate.png);
-            }
-
-            ol li {
-                text-align: left;
-                margin-bottom: 5px;
-            }
-
-
-
 
             
         </style>
@@ -85,7 +66,7 @@
 
                 <div class="collapse navbar-collapse" id="NavMenu">
                     <ul class="navbar-nav me-auto bg-light">
-                        <li class="nav-item"><a href="home.html" class="nav-link disabled">Home</a></li>
+                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
                         <!--Dropdown-->
                         <li class="nav-item dropdown">
                             <a 
@@ -97,7 +78,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="shopA.html" class="dropdown-item">Pet Fish</a>
+                                    <a href="shopA.html" class="dropdown-item disabled">Pet Fish</a>
                                 </li>
                                 <li>
                                     <a href="shopB.html" class="dropdown-item">Fillet Fish</a>
@@ -125,54 +106,57 @@
                 <div id="titleCard">
                     <h1>Online Fish Market</h1>
                     <hr></hr>
-                    <h4>Home: Welcome!</h4>
+                    <h4>Pet Shop: Take Care of Our Fish!</h4>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div id="contentBlock">
-                        <h1>What is The Online Fish Market?</h1>
-                        <hr></hr>
-                        <p>We sell a variety of fish, ranging from even alive to deceased fish. That does sound bad, but we aim 
-                            to appeal to a wide range of consumers. So if you're looking to care for a pet fish, visit our pet shop
-                            for overwhelmingly cheap prices! If you're feeling hungry for some seafood, we have just the thing for you in our
-                            fillet shop! But maybe you're also looking for recipes that deal with fish? No worries because the Online Fish Market
-                            has got you covered with recipes!
-                        </p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h5>List of Fish We Carry As Pets</h5>
-                                <ol>
-                                    <li>Clownfish</li>
-                                    <li>Porcupine Fish</li>
-                                    <li>Goldfish</li>
-                                    <li>Koi Fish</li>
-                                    <li>Betta Fish</li>
-                                    <li>Guppies</li>
-                                    <li>Gobies</li>
-                                </ol>
-                            </div>
-                            <div class="col-md-6">
-                                <h5>List of Fillet Options</h5>
-                                <ol>
-                                    <li>Regular</li>
-                                    <li>Steak</li>
-                                    <li>Loin</li>
-                                </ol>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="https://aquaforest.eu/wp-content/uploads/2025/06/blazenek-scaled.jpg" alt="clownfish picture"/>
+                        <h5>Clownfish</h5>
+                        <p class="card-price">$28.99</p>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h5>List of Recipes</h5>
-                                <ol>
-                                    <li>Fish Piccata</li>
-                                    <li>Lemon Feta Fish</li>
-                                    <li>Fish Florentine</li>
-                                    <li>Sushi Rolls</li>
-                                    <li>Nigiri Sushi</li>
-                                </ol>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="https://cdn.britannica.com/34/240534-050-B8C4B11E/Porcupine-fish-Diodon-hystox.jpg" alt="porcupine fish picture"/>
+                        <h5>Porcupine Fish</h5>
+                        <p class="card-price">$34.99</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://th-thumbnailer.cdn-si-edu.com/UNmAeCkWNSsFDl4GPHw_YmZXZwI=/1026x684/filters:no_upscale()/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/bf/4e/bf4ec3eb-669f-4a1d-87ad-dd83f81c384d/4694899147_fcd4b69350_o.jpg" alt="goldfish picture"/>
+                        <h5>Goldfish</h5>
+                        <p class="card-price">$14.99</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://a-z-animals.com/media/2021/09/Koi-header.jpg" alt="koi fish picture"/>
+                        <h5>Koi Fish</h5>
+                        <p class="card-price">$39.99</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuJSfpK2eKm2ooASXDrkRQzWbdE_jkrq0rGw&s" alt="betta fish picture"/>
+                        <h5>Betta Fish</h5>
+                        <p class="card-price">$19.99</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Guppy_pho_0048.jpg" alt="guppy picture"/>
+                        <h5>Guppies</h5>
+                        <p class="card-price">$10.99</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://www.thesprucepets.com/thmb/InY3TyLjpawOreZ2w0dkJ7QmJGE=/4040x0/filters:no_upscale():strip_icc()/cardinal-tetra-1378417-hero-485f0034557a4a67bb0b63cea50ac917.jpg" alt="tetra picture"/>
+                        <h5>Tetra Fish</h5>
+                        <p class="card-price">$13.99</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://www.algaebarn.com/wp-content/uploads/2020/10/shutterstock_93857989-scaled.jpg" alt="goby picture"/>
+                        <h5>Gobies</h5>
+                        <p class="card-price">$16.99</p>
                     </div>
                 </div>
             </div>

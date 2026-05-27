@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> OFM | Home </title>
+        <title> OFM | Shop </title>
 
         <!--NECESSITIES-->
         <!--Bootstrap-->
@@ -42,25 +42,6 @@
                 text-decoration: underline;
             }
 
-            #contentBlock > * {
-                text-align: left;
-                color: white;
-
-                margin-left: 15px;
-                margin-top: 10px;
-            }
-
-            ol li::marker {
-                content: url(crate.png);
-            }
-
-            ol li {
-                text-align: left;
-                margin-bottom: 5px;
-            }
-
-
-
 
             
         </style>
@@ -85,7 +66,7 @@
 
                 <div class="collapse navbar-collapse" id="NavMenu">
                     <ul class="navbar-nav me-auto bg-light">
-                        <li class="nav-item"><a href="home.html" class="nav-link disabled">Home</a></li>
+                        <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
                         <!--Dropdown-->
                         <li class="nav-item dropdown">
                             <a 
@@ -100,7 +81,7 @@
                                     <a href="shopA.html" class="dropdown-item">Pet Fish</a>
                                 </li>
                                 <li>
-                                    <a href="shopB.html" class="dropdown-item">Fillet Fish</a>
+                                    <a href="shopB.html" class="dropdown-item disabled">Fillet Fish</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider"></hr>
@@ -125,57 +106,32 @@
                 <div id="titleCard">
                     <h1>Online Fish Market</h1>
                     <hr></hr>
-                    <h4>Home: Welcome!</h4>
+                    <h4>Fillet Shop: Hungry For Our Fantastic Fillet?</h4>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div id="contentBlock">
-                        <h1>What is The Online Fish Market?</h1>
-                        <hr></hr>
-                        <p>We sell a variety of fish, ranging from even alive to deceased fish. That does sound bad, but we aim 
-                            to appeal to a wide range of consumers. So if you're looking to care for a pet fish, visit our pet shop
-                            for overwhelmingly cheap prices! If you're feeling hungry for some seafood, we have just the thing for you in our
-                            fillet shop! But maybe you're also looking for recipes that deal with fish? No worries because the Online Fish Market
-                            has got you covered with recipes!
-                        </p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h5>List of Fish We Carry As Pets</h5>
-                                <ol>
-                                    <li>Clownfish</li>
-                                    <li>Porcupine Fish</li>
-                                    <li>Goldfish</li>
-                                    <li>Koi Fish</li>
-                                    <li>Betta Fish</li>
-                                    <li>Guppies</li>
-                                    <li>Gobies</li>
-                                </ol>
-                            </div>
-                            <div class="col-md-6">
-                                <h5>List of Fillet Options</h5>
-                                <ol>
-                                    <li>Regular</li>
-                                    <li>Steak</li>
-                                    <li>Loin</li>
-                                </ol>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h5>List of Recipes</h5>
-                                <ol>
-                                    <li>Fish Piccata</li>
-                                    <li>Lemon Feta Fish</li>
-                                    <li>Fish Florentine</li>
-                                    <li>Sushi Rolls</li>
-                                    <li>Nigiri Sushi</li>
-                                </ol>
-                            </div>
-                        </div>
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_9u7dU9w-KSMvo7Ty6nXkuqUfNbTTO3Cvg&s" alt="reg fillet picture"/>
+                        <h5>Regular Fillet</h5>
+                        <p class="card-price">$14.99</p>
+                        <p class="card-desc">*Price may vary as the price per unit is $14.99</p>
                     </div>
-                </div>
-            </div>
+
+                    <div class="card">
+                        <img src="https://ship.conradscrabs.com/wp-content/uploads/2024/10/IMG_3134-scaled-1.jpeg" alt="fish steak picture"/>
+                        <h5>Fish Steak</h5>
+                        <p class="card-price">$16.99</p>
+                        <p class="card-desc">*Price is dependent per pound: $16.99</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpcIZEaa6jhTmAnjJwXG2YhH8r7N0bIc9jVw&s" alt="fish loin picture"/>
+                        <h5>Fish Loins</h5>
+                        <p class="card-price">$11.99</p>
+                        <p class="card-desc">*Price is dependent per pound: $11.99</p>
+                    </div>
+                
         </main>
 
         <!-------------FOOTER-------------->

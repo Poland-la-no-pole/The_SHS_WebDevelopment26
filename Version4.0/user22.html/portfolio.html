@@ -57,8 +57,8 @@
             background-color: #FFFF00;
         }
 
-        /* Part I: Special List Styling */
-        #knowledge li::marker {
+        /* Part I: Special List Styling - target only top-level list titles */
+        #knowledge > li::marker {
             color: red;
             content: "😜 ";
         }
@@ -69,7 +69,7 @@
             /* Force black on hover for rainbow cells */
         }
 
-        /* 3 more pseudo-classes (Part I, Step 13) */
+        /* 4 more pseudo-classes (Part I, Step 13) */
         /* 1. First child of the list */
         #knowledge li:first-child {
             font-weight: bold;
@@ -81,10 +81,15 @@
             font-style: italic;
         }
 
-        /* 3. Empty elements (if any) or focus state */
+        /* 3. Focus state for interactive elements */
         a:focus {
             outline: 3px solid #ff00ff;
             background-color: #eee;
+        }
+
+        /* 4. Visited link state */
+        a:visited {
+            color: #551A8B;
         }
     </style>
 </head>

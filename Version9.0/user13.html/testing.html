@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> OFM | Shop </title>
+        <title> Testing </title>
 
         <!--NECESSITIES-->
         <!--Bootstrap-->
@@ -25,6 +25,9 @@
                 color: white;
                 border-radius: 6px;
                 text-transform: uppercase;
+                
+                width: 100px;
+                height: 35px;
             }
         </style>
 
@@ -40,8 +43,25 @@
         </nav>
 
         <main>
-            <input type="button" class="buybutton" value="Buy" onclick="buy(this.id)" id="Goldfish"/>
-            <p style="color: white;" id="Display">Item Bought: </p>
+            <input type="button" class="buybutton" value="Buy" onclick="addtoCart(this.id)" id="Goldfish"/>
+            <input type="button" class="buybutton" value="Buy" onclick="addtoCart(this.id)" id="Guppy"/>
+            <input type="button" class="buybutton" value="Buy" onclick="addtoCart(this.id)" id="Regular-Fillet"/>
+            <input type="button" value="Check list" onclick="checkCart()"/>
+
+            <div class="card">
+                <img src="https://aquaforest.eu/wp-content/uploads/2025/06/blazenek-scaled.jpg" alt="clownfish picture"/>
+                <h5>Clownfish</h5>
+                <p class="card-price">$28.99</p>
+                <input type="button" class="buybutton" value="buy" id="Clownfish" onclick="cartUpdate(this.id)"/>
+            </div>
+            <div class="card">
+                        <img src="https://a-z-animals.com/media/2021/09/Koi-header.jpg" alt="koi fish picture"/>
+                        <h5>Koi Fish</h5>
+                        <p class="card-price">$39.99</p>
+                        <input type="button" class="buybutton" value="buy" id="Koi Fish" onclick="cartUpdate(this.id)"/>
+                    </div>
+            <input type="button" value="Check local storage" onclick="cartCheck()"/>
+            <input type="button" value="Empty Cart" onclick="cartEmpty()"/>
         </main>
     </body>
 

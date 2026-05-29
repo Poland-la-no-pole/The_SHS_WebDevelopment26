@@ -1,0 +1,25 @@
+
+
+
+
+
+p {
+   padding-left: 18px;
+   padding-top: 6px;
+   text-align: left;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+	text-align:left;
+    padding: 25px;
+    display: inline
+}
+
+
+
+*{
+    text-align:left;
+	border-radius: 15px;
+
+}

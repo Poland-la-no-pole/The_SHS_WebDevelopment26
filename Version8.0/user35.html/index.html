@@ -1,18 +1,201 @@
+<!DOCTYPE html>
 <html lang="en">
-    <!--Version 8.0 
-	Name:
-	Date Completed:
-    -->
-    <head>
-        
-        <title>Web Development User #00</title>
-    
-    </head>
-    
-    <body>
-        
-        <center>My name is User #00</center>
-    
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #ffffff;
+            color: #000000;
+        }
 
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 30px 0;
+        }
+
+        /* --- Row Form Container Styling (Matches Question 2 perfectly) --- */
+        .form-container {
+            border: 1px solid #767676;
+            padding: 12px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        /* flex-wrap: nowrap forces all element properties onto one single row line */
+        .form-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: nowrap;
+        }
+
+        .form-row input[type="text"], 
+        .form-row input[type="email"] {
+            padding: 4px 6px;
+            border: 1px solid #b5b5b5;
+            font-size: 13px;
+            width: 160px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], button {
+            padding: 3px 12px;
+            font-size: 13px;
+            background-color: #f0f0f0;
+            border: 1px solid #767676;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover, button:hover {
+            background-color: #e5e5e5;
+        }
+
+        .status-output {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        /* --- Madlib Form Styling (Matches Question 7 & 8 perfectly) --- */
+        .madlib-box {
+            margin-top: 15px;
+            max-width: 450px;
+        }
+
+        .madlib-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .madlib-group label {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+            width: 100px;
+            display: inline-block;
+        }
+
+        .madlib-group input[type="text"] {
+            width: 250px;
+            padding: 3px 5px;
+            border: 1px solid #767676;
+            font-size: 16px;
+        }
+
+        .madlib-submit-container {
+            margin-top: 12px;
+            padding-left: 100px;
+        }
+
+        .madlib-submit-container button {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 4px 12px;
+        }
+
+        .output-text-area {
+            margin-top: 25px;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form name="submit-to-google-sheet">
+            <div class="form-row">
+                <input name="email" type="email" placeholder="Email" required>
+                <input name="name" type="text" placeholder="Name" required>
+                <input name="color" type="text" placeholder="Favorite Color">
+                <input name="comments" type="text" placeholder="Comments">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </div>
+
+    <div class="status-output">
+        <span id="mySpan"></span>
+    </div>
+
+
+    <hr>
+
+
+    <div class="madlib-box">
+        <form id="madlibForm" onsubmit="compileMadlib(event)">
+            
+            <div class="madlib-group">
+                <label for="noun">Noun:</label>
+                <input type="text" id="noun" required>
+            </div>
+
+            <div class="madlib-group">
+                <label for="adjective">Adjective:</label>
+                <input type="text" id="adjective" required>
+            </div>
+
+            <div class="madlib-group">
+                <label for="verb">Verb:</label>
+                <input type="text" id="verb" required>
+            </div>
+
+            <div class="madlib-submit-container">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div id="madlib-output" class="output-text-area">
+        These are my output words: <span id="printedWords"></span>
+    </div>
+
+
+    <script>
+        // Google Sheet Form Connection Deployment Hook
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUNKWwNNJ8Z9xk1Q29ro0yNjlZBqyRji9jutMFPYYaPozgkWBFHdOqPiBZ6NnoOA/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const targetSpan = document.getElementById('mySpan');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            targetSpan.innerText = "Submitting row...";
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    targetSpan.innerText = "Data successfully submitted to Google Sheet!";
+                    form.reset();
+                })
+                .catch(error => {
+                    targetSpan.innerText = "Error encountered during submission.";
+                    console.error('Submission Error:', error.message);
+                });
+        });
+
+        // Madlib Array Compiler
+        function compileMadlib(event) {
+            event.preventDefault();
+
+            const userNoun = document.getElementById('noun').value;
+            const userAdjective = document.getElementById('adjective').value;
+            const userVerb = document.getElementById('verb').value;
+
+            const outcomeString = `${userNoun}, ${userAdjective}, ${userVerb}.`;
+
+            document.getElementById('printedWords').innerText = outcomeString;
+            document.getElementById('madlib-output').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
 </html>

@@ -28,13 +28,14 @@ p {
 
 }
 
-h1, h2, h3, h5, h6{
+h1, h2, h3, h5 {
 	text-align:left;
     padding: 25px;
     display: inline
 }
 
-h4 {
+
+h4, h6 {
     text-align:left;
     padding: 25px;
     display: inline-block

@@ -55,3 +55,19 @@ th {
 	color: #ffffff;
 	background-color: #125740;
 }
+
+.award{
+  opacity: 0%;
+}
+
+#wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.awardButton{
+          width: 200xpx;
+        height: 30px;
+
+}

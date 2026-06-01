@@ -1,25 +1,19 @@
-let cart_list = [];
+// User created function: Shopping cart
+const cart_list = JSON.parse(localStorage.getItem('userCart')) || [];
 
 function addtoCart(itemid) {
     cart_list.push(itemid);
+
+    localStorage.setItem('userCart', JSON.stringify(cart_list));
+
 }
 
-function checkCart() {
-    alert(cart_list);
+function checkLocalStorage() {
+    let current = localStorage.getItem('userCart');
+    alert(current)
 }
 
-// local storage method
-
-function cartUpdate(item) {
-    alert(item+' has been added to cart');
-    localStorage.setItem('cart',item);
-}
-
-function cartCheck() {
-    const list = localStorage.getItem('cart');
-    alert('This is whats in the cart: '+list);
-}
-
-function cartEmpty() {
-    localStorage.clear();
+// basic functions
+function submitform() {
+    alert('Thanks! We will look into your suggestion')
 }

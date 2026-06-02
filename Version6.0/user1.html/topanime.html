@@ -28,6 +28,7 @@
 </nav>
 
 <section class="container py-5">
+
     <h1 class="text-center mb-5">Top Anime Rankings</h1>
 
     <table class="table table-dark table-striped table-hover text-center">
@@ -65,11 +66,42 @@
             </tr>
         </tbody>
     </table>
+
+</section>
+
+<section class="container py-5 text-center">
+
+    <h2>Anime of the Day (API Feature)</h2>
+
+    <p>
+        Click the button to load anime information from an online API.
+    </p>
+
+    <button
+        class="btn btn-danger"
+        onclick="getAnime()">
+
+        Load Anime Data
+
+    </button>
+
+    <div class="mt-4">
+
+        <h3 id="animeTitle"></h3>
+
+        <p id="animeEpisodes"></p>
+
+        <p id="animeScore"></p>
+
+    </div>
+
 </section>
 
 <footer class="bg-black text-light text-center p-4">
     <p>AnimeVerse | Top Anime Page</p>
 </footer>
+
+<script src="JS/script.js"></script>
 
 </body>
 </html>

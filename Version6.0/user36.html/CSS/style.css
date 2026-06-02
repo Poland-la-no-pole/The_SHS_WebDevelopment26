@@ -30,4 +30,8 @@ footer {
 }.card-img-top {
   height: 355px;        
   object-fit: cover;    
+}.card{
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
 }

@@ -47,15 +47,16 @@
                 <img src="https://aquaforest.eu/wp-content/uploads/2025/06/blazenek-scaled.jpg" alt="clownfish picture"/>
                 <h5>Clownfish</h5>
                 <p class="card-price">$28.99</p>
-                <input type="button" class="buybutton" value="buy" id="Clownfish" onclick="addtoCart(this.id)"/>
+                <input type="button" class="buybutton" value="buy" id="Clownfish" onclick="addtoCart(this.id, '$28.99')"/>
             </div>
             <div class="card">
                 <img src="https://a-z-animals.com/media/2021/09/Koi-header.jpg" alt="koi fish picture"/>
                 <h5>Koi Fish</h5>
                 <p class="card-price">$39.99</p>
-                <input type="button" class="buybutton" value="buy" id="Koi Fish" onclick="addtoCart(this.id)"/>
+                <input type="button" class="buybutton" value="buy" id="Koi Fish" onclick="addtoCart(this.id, '$39.99')"/>
             </div>
             <input type="button" value="Check local storage" onclick="checkLocalStorage()"/>
+            <input type="button" value="Empty local storage" onclick="emptyLocalStorage()"/>
 
         </main>
     </body>

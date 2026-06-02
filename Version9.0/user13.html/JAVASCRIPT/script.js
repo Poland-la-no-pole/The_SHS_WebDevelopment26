@@ -7,6 +7,8 @@ function addtoCart(selecteditem, pricelisted) {
 
     if (existingItem) {
         existingItem.quantity += 1;
+        existingItem.price += pricelisted;
+        alert
     } else {
         cart_list.push({item: selecteditem, price: pricelisted, quantity: 1});
     }
@@ -22,7 +24,6 @@ function addtoCart(selecteditem, pricelisted) {
 
 
     localStorage.setItem('userCart', JSON.stringify(cart_list));
-    i = 0;
 }
 
 
@@ -30,11 +31,26 @@ function addtoCart(selecteditem, pricelisted) {
 function checkLocalStorage() {
     let current = localStorage.getItem('userCart');
     alert(current);
+    alert('list length: '+cart_list.length);
 }
 
 function emptyLocalStorage() {
     localStorage.clear();
     cart_list.length = 0;
+}
+
+// Load Cart /////////////////////////
+function loadCart() {
+    let contents = document.getElementById('listdisplay').innerHTML;
+    const container = document.getElementById("listdisplay");
+    container.innerHTML = "<p>Content injected successfully!</p>";
+
+    for (let i = 0; i > cart_list.length; i++) {
+        contents += '$'+cart_list[i].price+' Item: '+cart_list[i].item+' x'+cart_list[i].quantity;
+        if (cart_list.length > i) {
+            contents += '\n';
+        }
+    }
 }
 
 // Basic functions /////////////////////

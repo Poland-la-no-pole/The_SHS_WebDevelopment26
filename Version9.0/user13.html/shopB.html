@@ -43,6 +43,10 @@
                 text-decoration: underline;
             }
 
+            .buybutton {
+                vertical-align: none;
+            }
+
 
             
         </style>
@@ -117,6 +121,7 @@
                         <h5>Regular Fillet</h5>
                         <p class="card-price">$14.99</p>
                         <p class="card-desc">*Price may vary as the price per unit is $14.99</p>
+                        <input type="button" class="buybutton" value="buy" id="Regular Fillet" onclick="addtoCart(this.id, 15)"/>
                     </div>
 
                     <div class="card">
@@ -124,6 +129,7 @@
                         <h5>Fish Steak</h5>
                         <p class="card-price">$16.99</p>
                         <p class="card-desc">*Price is dependent per pound: $16.99</p>
+                        <input type="button" class="buybutton" value="buy" id="Fish Steak" onclick="addtoCart(this.id, 17)"/>
                     </div>
 
                     <div class="card">
@@ -131,6 +137,7 @@
                         <h5>Fish Loins</h5>
                         <p class="card-price">$11.99</p>
                         <p class="card-desc">*Price is dependent per pound: $11.99</p>
+                        <input type="button" class="buybutton" value="buy" id="Fish Loins" onclick="addtoCart(this.id, 12)"/>
                     </div>
                 
         </main>

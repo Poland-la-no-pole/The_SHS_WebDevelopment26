@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
 
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Invincible Universe</title>
+  <title>Merchandise</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -62,29 +60,20 @@
     <h2>
 
       <!-- Font Awesome -->
-      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-shirt"></i>
 
-      Welcome
+      Merchandise
 
     </h2>
 
     <p>
-      This website is about the Invincible superhero series.
-      Explore information about characters, merchandise, and more.
+      Here are some simple Invincible merchandise items for fans of the series.
     </p>
-    <button onclick="welcomeMessage(this)" class="btn btn-warning">
-        Message for you!
-    </button>
-
-    <!-- Bootstrap -->
-    <img src="images/invincibleTitle.jpg" class="img-fluid rounded w-100" alt="Invincible Title Image">
 
   </section>
 
   <!-- Semantic Markup -->
   <section>
-
-    <h2>Featured Pages</h2>
 
     <div class="container">
 
@@ -97,23 +86,26 @@
           <!-- Animated Cards -->
           <div class="card p-3">
 
-            <h3>
+             <!-- Image -->
+            <img src="images/invincibleShirt.jpg" class="img-fluid rounded mb-2" alt="Invincible Shirt">
 
-              <!-- Font Awesome -->
-              <i class="fa-solid fa-book"></i>
+            <h3>Shirt</h3>
 
-              About
+            <p>Invincible logo t-shirt.</p>
 
-            </h3>
+            <!-- Lists -->
+            <ul>
 
-            <p>
-              Learn about the Invincible series and characters.
-            </p>
+              <li>Cotton</li>
+
+              <li>Multiple sizes</li>
+
+            </ul>
 
             <!-- Bootstrap -->
-            <a href="page2.html" class="btn btn-primary">
-              Visit
-            </a>
+            <button class="btn btn-primary" onclick="buyItem(this)">
+              Buy
+            </button>
 
           </div>
 
@@ -125,23 +117,26 @@
           <!-- Animated Cards -->
           <div class="card p-3">
 
-            <h3>
+            <!-- Image -->
+             <img src="images/invinciblePoster.jpg" class="img-fluid rounded mb-2" alt="Invincible Poster">
 
-              <!-- Font Awesome -->
-              <i class="fa-solid fa-shirt"></i>
+            <h3>Poster</h3>
 
-              Merch
+            <p>Wall poster of Invincible characters.</p>
 
-            </h3>
+            <!-- Lists -->
+            <ul>
 
-            <p>
-              Browse Invincible merchandise and collectibles.
-            </p>
+              <li>Gloss print</li>
+
+              <li>Large size</li>
+
+            </ul>
 
             <!-- Bootstrap -->
-            <a href="page3.html" class="btn btn-primary">
-              Visit
-            </a>
+            <button class="btn btn-primary" onclick="buyItem(this)">
+              Buy
+            </button>
 
           </div>
 
@@ -153,23 +148,26 @@
           <!-- Animated Cards -->
           <div class="card p-3">
 
-            <h3>
+            <!-- Image -->
+             <img src="images/invincibleFigures.jpg" class="img-fluid rounded mb-2" alt="Invincible Figure">
 
-              <!-- Font Awesome -->
-              <i class="fa-solid fa-circle-question"></i>
+            <h3>Figure</h3>
 
-              FAQ
+            <p>Collectible action figure.</p>
 
-            </h3>
+            <!-- Lists -->
+            <ul>
 
-            <p>
-              Find answers to common questions.
-            </p>
+              <li>Poseable</li>
+
+              <li>Limited stock</li>
+
+            </ul>
 
             <!-- Bootstrap -->
-            <a href="page5.html" class="btn btn-primary">
-              Visit
-            </a>
+            <button class="btn btn-primary" onclick="buyItem(this)">
+              Buy
+            </button>
 
           </div>
 
@@ -178,6 +176,39 @@
       </div>
 
     </div>
+
+  </section>
+
+  <!-- Semantic Markup -->
+  <section>
+
+    <h2>Top Items</h2>
+
+    <!-- Tables -->
+    <!-- Bootstrap -->
+    <table class="table table-bordered">
+
+      <tr>
+        <th>Item</th>
+        <th>Popularity</th>
+      </tr>
+
+      <tr>
+        <td>Shirt</td>
+        <td>High</td>
+      </tr>
+
+      <tr>
+        <td>Poster</td>
+        <td>Medium</td>
+      </tr>
+
+      <tr>
+        <td>Figure</td>
+        <td>High</td>
+      </tr>
+
+    </table>
 
   </section>
 

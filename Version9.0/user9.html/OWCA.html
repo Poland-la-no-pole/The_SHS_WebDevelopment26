@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Phineas and Ferb </title>
+        <title> OWCA </title>
+        <link rel="stylesheet" href="CSS/OWCA.css">
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
         <script src="JS/JavaScript.js"></script>
     </head>
-
-    <body>
+    <body> 
         <div class="navigation">
         <nav class="navbar navbar-expand-lg" style="background-color: #FFD700;">
         <div class="container-fluid">
@@ -53,22 +55,57 @@
         </div>
         </nav>
         </div>
-        <main class="index">
-            <h1> Phineas and Ferb </h1>
-            <div class="show">
-                <p class="show_description"> Phineas and Ferb is a popular animated musical-comedy series created by Dan Povenmire
-                and Jeff "Swampy" Marsh that aired on Disney Channel from 2007 to 2015 and a revival
-                that aired on June 5, 2025 with additional content for 2026. The show follows the daily
-                adventures of two ingenius stepbrothers, Phineas Flynn and Ferb Fletcher as they make
-                many inventions and do different activities during their very long summer vacation.
-                </p>
-                <figure>
-                    <img src="images/P&F.jpeg" onload="imageLoad(this)" class="image" alt="Phineas and Ferb Show Cover"/>
-                    <figcaption id="thumbnail" style="display: none;">This image is the primary logo/thumbnail for the Phineas and Ferb franchise and has been the core promotional art from the shows premiere in August 17, 2007 to present.</figcaption>
-                </figure>
+        <main class="OWCA">
+        <h1 class="text-center">OWCA Main Staff</h1>
+        <div class="text-center"><button onclick="OWCAdesc()" style="background-color:#FFD700;">What is the OWCA?</button></div>
+        <p id="desc" class="text-center" style="width: 33%; margin: 0 auto;"></p>
+        <div id="gallery">
+            <div class="container" style="width: 312.5px; height: 400px; margin: 3%">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyuHwxreYT3GkSqjPkN05jlAQiRQwb-ZtQPQ&s" alt="Major Monogram">
+                        <p class="caption" style="color:white;">Major Monogram</p>
+                    </div>
+                    <div class="back">
+                        <a href="#" target="_blank">
+                            <h2 class="mh-100">Major Franics Monogram</h2>
+                        </a>
+                        <p class="description">Major Francis Monogram is a supporting character in Phineas and Ferb and he is the head of the Tri-State Area Branch and Perry's (Agent P) commanding officer. His role is to give Perry his missions each episode.</p>
+                    </div>
+                </div>
             </div>
-        </main>
-        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+
+            <div class="container" style="width: 312.5px; height: 400px; margin: 3%">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="images/Carl_Karl.png" alt="Carl Karl">
+                        <p class="caption" style="color:gray;">Carl Karl</p>
+                    </div>
+                    <div class="back">
+                        <a href="#" target="_blank">
+                            <h2 class="mh-100">Carl Karl</h2>
+                        </a>
+                        <p class="description">Carl Karl is unpaid intern and cameraman for Major Francis Monogram at the OWCA where he handles technical administrative tasks, assists with agent briefings, and acts as an overall sidekick all while he is pursuing college credit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="width: 312.5px; height: 400px; margin: 3%">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="images/AWA.jpeg" alt="Admiral Wanda Acronym">
+                        <p class="caption" style="color:white;">Admiral Wanda Acronym</p>
+                    </div>
+                    <div class="back">
+                        <a href="#" target="_blank">
+                            <h2 class="mh-100">Admiral Wanda Acronym</h2>
+                        </a>
+                        <p class="description">Admiral Wanda Acronym is a high-ranking leader in the OWCA, serving as a divison leader who commands her own team of animal agents. She functions as the commanding officer for other agents like Major Monogram does for Perry the Platypus(Agent P).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
     <section>
     <div class="container text-center text-md-start mt-5">
         <div class="row mt-3">
@@ -125,12 +162,4 @@
         </div>
         </footer>
     </body>
-    <script>
-        function imageLoad(img) {
-
-            if (img.naturalWidth > 0) {
-                document.getElementById("thumbnail").style.display = "block";
-            }
-        }
-    </script>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Phineas and Ferb </title>
+        <title> Doofenshmirtz Evil Inc</title>
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico"/>
@@ -10,9 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
         <script src="JS/JavaScript.js"></script>
     </head>
-
-    <body>
-        <div class="navigation">
+    <body> 
         <nav class="navbar navbar-expand-lg" style="background-color: #FFD700;">
         <div class="container-fluid">
             <button
@@ -52,20 +50,39 @@
             </div>
         </div>
         </nav>
-        </div>
-        <main class="index">
-            <h1> Phineas and Ferb </h1>
+        <main class="index" style="padding: 0;">
+            <h1 class="text-center" style="margin:0; padding-top: 2%;">Doofenshmirtz Evil Incorporated</h1>
             <div class="show">
-                <p class="show_description"> Phineas and Ferb is a popular animated musical-comedy series created by Dan Povenmire
-                and Jeff "Swampy" Marsh that aired on Disney Channel from 2007 to 2015 and a revival
-                that aired on June 5, 2025 with additional content for 2026. The show follows the daily
-                adventures of two ingenius stepbrothers, Phineas Flynn and Ferb Fletcher as they make
-                many inventions and do different activities during their very long summer vacation.
-                </p>
-                <figure>
-                    <img src="images/P&F.jpeg" onload="imageLoad(this)" class="image" alt="Phineas and Ferb Show Cover"/>
-                    <figcaption id="thumbnail" style="display: none;">This image is the primary logo/thumbnail for the Phineas and Ferb franchise and has been the core promotional art from the shows premiere in August 17, 2007 to present.</figcaption>
+                <figure style="width: 40%; margin: 2%;">
+                    <img onmouseover="mouseOn(this)" onmouseout="mouseOff(this)" src="images/DEI.jpeg" alt="Doofenshmirtz Evil Incorporated" style="display: inline; width:100%"/>
+                    <figcaption id="building" style="display: none;">Doofenshmirtz Evil Incorporated is the iconic base of operations for Dr. Heinz Doofenshmirtz in Phineas and Ferb. Famously recognized by its jingle, the purple penthouse tower is located in Danville at 9297 Polly Parkway and features a sprawling lab, a balcony, and living quarters.</figcaption>
                 </figure>
+            <p id="DEI_text" style="display: inline; max-width: 20%;">Doofenshmirtz Evil Incorporated is the fictional, villainous corporation 
+            owned by Dr. Heinz Doofenshmirtz in Phineas and Ferb, headquartered in a 
+            tall, purple tower in Danville. It serves as his base to create "-inator" 
+            inventions for taking over the Tri-State Area, primarily funded by alimony 
+            from his ex-wife, Charlene.</p>
+            <div class="inators">
+                <h6 class="text-center"> Best inators </h6>
+                <ol>
+                    <li>Bread-inator</li>
+                    <li>Media-Erase-inator</li>
+                    <li>Delete From My Mind-inator</li>
+                    <li>De-Volition-inator</li>
+                    <li>Yodel-inator</li>
+                    <li>Other-Dimension-inator</li>
+                    <li>Mustache-inator</li>
+                </ol>
+            </div>
+            <div class="DEIStaff">
+            <h6 class="text-center"> Staff </h6>
+            <ul>
+                <li> Dr Doofenshmirtz</li>
+                <li> Vanessa Doofenshmirtz</li>
+                <li> Norm the Robot</li>
+                <li> The Slacks</li>
+            </ul>
+            </div>
             </div>
         </main>
         <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -125,12 +142,4 @@
         </div>
         </footer>
     </body>
-    <script>
-        function imageLoad(img) {
-
-            if (img.naturalWidth > 0) {
-                document.getElementById("thumbnail").style.display = "block";
-            }
-        }
-    </script>
 </html>

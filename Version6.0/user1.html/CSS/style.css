@@ -60,3 +60,22 @@ footer {
 img {
     max-width: 100%;
 }
+.dark-mode {
+    background-color: #000 !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.dark-mode section {
+    background-color: #000 !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.dark-mode .card {
+    background-color: #222 !important;
+    color: rgb(0, 0, 0) !important;
+}
+
+.dark-mode .list-group-item {
+    background-color: #222 !important;
+    color: rgb(0, 0, 0) !important;
+}

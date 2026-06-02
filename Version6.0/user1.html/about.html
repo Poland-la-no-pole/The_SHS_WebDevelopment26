@@ -31,7 +31,16 @@
 
 <section class="container py-5 text-center">
     <h1 class="display-3">About AnimeVerse</h1>
-    <p class="lead">AnimeVerse is a website dedicated to anime fans around the world.</p>
+
+    <p class="lead">
+        AnimeVerse is a website dedicated to anime fans around the world.
+    </p>
+
+    <button class="btn btn-danger mt-3" onclick="showDate()">
+        Show Today's Date
+    </button>
+
+    <p id="date" class="mt-3 fw-bold"></p>
 </section>
 
 <section class="container py-5">
@@ -53,14 +62,48 @@
         </div>
 
         <div class="col-md-6 text-center">
-            <img src="https://wallpaperaccess.com/full/5522006.jpg" class="img-fluid rounded shadow" alt="Anime">
+            <img src="https://wallpaperaccess.com/full/5522006.jpg"
+                 class="img-fluid rounded shadow"
+                 alt="Anime">
+
+            <button class="btn btn-warning mt-3" onclick="favoriteAnime()">
+                Show Favorite Anime
+            </button>
         </div>
     </div>
+</section>
+
+<section class="container py-5 text-center">
+
+    <h2>Anime Name Counter</h2>
+
+    <p>
+        Enter an anime title and see how many characters are in the name.
+    </p>
+
+    <input
+        type="text"
+        id="animeInput"
+        class="form-control w-50 mx-auto"
+        placeholder="Enter anime title">
+
+    <button
+        class="btn btn-primary mt-3"
+        onclick="countCharacters()">
+
+        Count Characters
+
+    </button>
+
+    <p id="count" class="mt-3 fs-5"></p>
+
 </section>
 
 <footer class="bg-black text-light text-center p-4">
     <p>AnimeVerse | About Page</p>
 </footer>
+
+<script src="JS/script.js"></script>
 
 </body>
 </html>

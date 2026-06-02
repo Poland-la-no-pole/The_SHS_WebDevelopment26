@@ -41,11 +41,14 @@ function emptyLocalStorage() {
 
 // Load Cart /////////////////////////
 function loadCart() {
+    alert('loaded');
     let contents = document.getElementById('listdisplay').innerHTML;
     const container = document.getElementById("listdisplay");
     container.innerHTML = "<p>Content injected successfully!</p>";
 
+    // FOR Mr Teut: The function calling from cart.html works, but the function stops at writing "Content injected successfully". The alert inside of the for loop never activates------
     for (let i = 0; i > cart_list.length; i++) {
+        alert('Iterating through the sequence');
         contents += '$'+cart_list[i].price+' Item: '+cart_list[i].item+' x'+cart_list[i].quantity;
         if (cart_list.length > i) {
             contents += '\n';

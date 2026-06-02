@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Phineas and Ferb </title>
+        <title> Characters </title>
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico"/>
@@ -10,9 +10,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
         <script src="JS/JavaScript.js"></script>
     </head>
-
-    <body>
-        <div class="navigation">
+    <body> 
         <nav class="navbar navbar-expand-lg" style="background-color: #FFD700;">
         <div class="container-fluid">
             <button
@@ -52,20 +50,54 @@
             </div>
         </div>
         </nav>
-        </div>
-        <main class="index">
-            <h1> Phineas and Ferb </h1>
-            <div class="show">
-                <p class="show_description"> Phineas and Ferb is a popular animated musical-comedy series created by Dan Povenmire
-                and Jeff "Swampy" Marsh that aired on Disney Channel from 2007 to 2015 and a revival
-                that aired on June 5, 2025 with additional content for 2026. The show follows the daily
-                adventures of two ingenius stepbrothers, Phineas Flynn and Ferb Fletcher as they make
-                many inventions and do different activities during their very long summer vacation.
-                </p>
-                <figure>
-                    <img src="images/P&F.jpeg" onload="imageLoad(this)" class="image" alt="Phineas and Ferb Show Cover"/>
-                    <figcaption id="thumbnail" style="display: none;">This image is the primary logo/thumbnail for the Phineas and Ferb franchise and has been the core promotional art from the shows premiere in August 17, 2007 to present.</figcaption>
-                </figure>
+        <main id="chart">
+            <h1 style="padding-top: 2%;"> Main Characters (Friends/Family) </h1>
+            <table class="table table-bordered align-middle text-center">
+                <thead style="--bs-table-bg: #FFD700; --bs-table-color: #333;"> 
+                    <tr>
+                        <th> Name </th>
+                        <th> Association </th>
+                        <th> Picture </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th> Candace Flynn</th>
+                        <th> Phineas's biological older sister and Ferb's stepsister</th>
+                        <th><img src="images/FunnyCandace.jpeg" alt="Candance Flynn" style="display: inline;" /></th>
+                    </tr>
+                    <tr>
+                        <th> Linda Flynn-Fletcher</th>
+                        <th> Phineas's biological mom and Ferb's stepmother</th>
+                        <th><img src="images/Linda.jpeg" alt="Linda Flynn-Fletcher" style="display: inline;" /></th>
+                    </tr>
+                    <tr>
+                        <th> Lawrence Fletcher</th>
+                        <th> Ferb's biological father and Phineas's stepfather</th>
+                        <th><img src="images/Lawrence.jpeg" alt="Lawrence Fletcher" style="display: inline;" /></th>
+                    </tr>
+                    <tr>
+                        <th> Isabella Garcia-Shapiro</th>
+                        <th> Across-the-street neighbor, leader of the Fireside Girls, and friend</th>
+                        <th><img src="images/Isabella.jpeg" alt="Isabella" style="display: inline;" /></th>
+                    </tr>
+                    <tr>
+                        <th> Baljeet Tjinder</th>
+                        <th> Close friend and considered the "brains" of the group</th>
+                        <th><img src="images/Baljeet.jpeg" alt="Baljeet" style="display: inline;" /></th>
+                    </tr>
+                    <tr>
+                        <th> Buford Van Stomm</th>
+                        <th> Former bully and considered the "brawn" of the group</th>
+                        <th><img src="images/Buford.jpeg" alt="Buford" style="display: inline;" /></th>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-center">
+                <p> Write a characters name to get a fun fact about them!</p>
+                <input id="FavCharacter" type="text" />
+                <input onclick="FavPerson()" type="button" value="Submit" />
+                <p id="FunFact"></p>
             </div>
         </main>
         <footer class="text-center text-lg-start bg-body-tertiary text-muted">
@@ -125,12 +157,4 @@
         </div>
         </footer>
     </body>
-    <script>
-        function imageLoad(img) {
-
-            if (img.naturalWidth > 0) {
-                document.getElementById("thumbnail").style.display = "block";
-            }
-        }
-    </script>
 </html>

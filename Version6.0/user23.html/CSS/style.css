@@ -5,7 +5,42 @@ html, body {
     overflow-x: hidden; /* Stops that annoying side-to-side wiggle */
 }
 
-/* This forces every section to be full width and neat */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #222;
+}
+
+.logo {
+  color: white;
+  font-size: 32px;
+  font-family: cursive;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+navbar, .container, .container-fluid, section, header {
+    width: 100% !important;
+    display: block !important;
+}
+
 .container-fluid, section, header, nav {
     width: 100% !important;
     display: block !important;
@@ -17,15 +52,6 @@ body {
 
 body.index-page {
     background-color: #212529 !important;
-}
-
-.navbar-brand {
-    color: #ffffff !important;
-}
-
-
-.navbar-nav .nav-link {
-    color: #ffffff !important;
 }
 
 
@@ -197,17 +223,17 @@ img {
 }
 
 .italy-section p {
-    text-align: justify;       /* Stretches text to both left and right edges */
-    text-justify: inter-word;  /* Distributes space between words for a clean look */
-    line-height: 1.8;          /* Adds space between lines to make the block "taller" */
-    font-size: 1.1rem;         /* Slightly larger font helps fill the space */
-    margin-right: 20px;        /* Keeps it from hitting the very edge of the screen */
+    text-align: justify;      
+    text-justify: inter-word;  
+    line-height: 1.8;          
+    font-size: 1.1rem;        
+    margin-right: 20px;     
 }
 
 .italy-section h2 {
-    font-weight: 900;          /* Makes the title thick and "blocky" */
-    text-transform: uppercase; /* All caps adds to the structured look */
-    letter-spacing: 2px;       /* Spreads the letters out slightly */
+    font-weight: 900;         
+    text-transform: uppercase; 
+    letter-spacing: 2px;       
 }
 
 .text-content, .container {

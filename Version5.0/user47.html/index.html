@@ -58,7 +58,12 @@
             /* Positional alignment */
 
         }
-        
+        .nav-link.active:hover {
+           color: #15ff00;
+                            }
+            .nav-link.nav-link.active:hover::after {
+              background-color: #0004ff;
+                            }
     </style>
 
     <body>
@@ -69,28 +74,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-<style>
-  .nav-link.active {
-                                font-weight: bold;
-                                color: #15ff00;
-                            }
-                            .nav-link.active::after {
-                                content: '';
-                                display: block;
-                                width: 100%;
-                                height: 2px;
-                                background-color: #15ff00;
-                                margin-top: 5px;
-                            }
-                            .nav-link.active:hover {
-                                color: #15ff00;
-                            }
-                            .nav-link.nav-link.active:hover::after {
-                                background-color: #0004ff;
-                            
-                              
-                .
-                                
+
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav me-auto">
                         <!--↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Edit These Items in your NavBar ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
